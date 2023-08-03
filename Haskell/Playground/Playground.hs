@@ -64,3 +64,6 @@ monadicMapAndFilter x = x >>= \a -> [a + 1] >>= \b -> ([b | b /= 3])
 
 main :: IO ()
 main = print . sum . monadicMapAndFilter $ [1, 2, 3]
+
+-- A way to obtain values from multi line input returning them as a single list with per line values as elements as list of items
+-- map $ (map read . words) . lines
