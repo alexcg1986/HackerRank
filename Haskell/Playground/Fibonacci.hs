@@ -8,4 +8,4 @@ getFibonacciSeries 0 = []
 getFibonacciSeries n = getFibonacciSeries (n - 1) ++ [getNthFibonacci n]
 
 main :: IO ()
-main = print $ getNthFibonacci 5
+main = print $ getFibonacciSeries 5
